@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #09DBA4;
+}
+
+#Pai{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+
+.Vídeo{
+    display: flex;
+    justify-content: center;
+    margin: 45px 0px 0px 0px;
+    
+}
+
+.Vídeo>iframe{
+    width: 840px;
+    height: 472.5px;
+}
+
+.Link{
+    background-color: #dc143c;
+    font-size: 30px;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 40px;
+    
+}
+
+a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.Volta{
+    display: flex;
+    justify-content: center;
+}
+
+.Link:hover{
+    background-color: #dc143ce7;
+}

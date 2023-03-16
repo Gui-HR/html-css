@@ -1,0 +1,65 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #09DBA4;
+}
+
+#Tittle{
+    text-align: center;
+    background-color: #1B8F70;
+    margin: auto;
+    width: 90%; /* Usar  medidas de %,rem, em para responsividade */
+    border-radius: 0px 0px 40px 40px;
+}
+
+.TittleVídeo{
+    width: 100%;
+    max-width: 500px;
+    background-color: #dc143c;
+    text-align: center;
+    padding: 8px;
+    border-radius: 40px;
+    /* Topo, direita, inferior, esquerda */
+    margin: 5px 0px 10px 0px;
+    font-size: 30px;
+}
+
+#VídeoList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+
+.Vídeo img{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.Vídeo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Thumb{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

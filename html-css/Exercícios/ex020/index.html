@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        div{
+            font-size: 3em;
+            text-align: center;
+            width: 1000px;
+        }
+
+        div > p{
+            display:none;
+
+        }
+
+        div:hover > p{
+            display: block;
+            text-align: center;
+            font-size: 5em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <p>Passe por cima do emote</p>
+    <div>
+        .-.
+        <p>GAY</p>
+    </div>
+</body>
+</html>
