@@ -13,11 +13,22 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody >tr:nth-child(odd){
+            background-color: lightgrey;
         }
 
         td,th{
@@ -33,9 +44,10 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>Estados do Brasil e suas populaçoes</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -149,7 +161,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">210 147 125</td>
             </tr>
         </tfoot>
