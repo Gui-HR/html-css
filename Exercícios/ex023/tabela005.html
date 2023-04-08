@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td, th{
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .nome{
+            background-color: aqua;
+        }
+        
+        .sexo{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="2">
+            <col class="nome">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Marcio</td>
+            <td>M</td>
+            <td>37</td>
+            <td>Encanador</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Balconista</td>
+        </tr>
+        <tr>
+            <td>Vinicius</td>
+            <td>M</td>
+            <td>52</td>
+            <td>Advogado</td>
+        </tr>
+    </table>
+</body>
+</html>
