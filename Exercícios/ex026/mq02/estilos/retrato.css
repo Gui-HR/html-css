@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Estilo Retrato (Portrait) */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/cev-portrait.jpg);
+    background-position: center bottom;
+}
