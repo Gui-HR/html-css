@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
         <h1>Notícia Incrível</h1>
         <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -34,6 +35,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima accusantium temporibus, voluptates quo inventore. Velit, fugiat? Alias perferendis quibusdam officia accusamus voluptatem, ut labore quam minus totam, ad unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deserunt maiores aperiam, pariatur facilis autem. Aliquid praesentium ex accusantium quis cumque assumenda. Atque nobis alias minima eius reiciendis voluptates ex?</p>
         </article>
         <script>
+            function tamanho() {
+                if (window.innerWidth >= 600) {
+                    nav.style.display = 'block'
+                } else {
+                    nav.style.display = 'none'
+                }
+            }
+
             function clickMenu() {
                 if (nav.style.display == 'block') {
                     nav.style.display = 'none'
